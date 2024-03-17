@@ -1,6 +1,5 @@
 import { useState } from 'react'
 
-import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { BaseColaboradores } from './assets/BaseColaboradores';
@@ -52,7 +51,7 @@ const App = () => {
           <Col sm={12} md={9}>
             <Listado colaboradores={filteredColaboradores}/>
           </Col>
-          <Col md={3} className=''>
+          <Col md={3}>
             <h2>Agregar colaborador</h2>
             <Formulario onSubmit={handleSubmit} setAlert={setAlert} />
             {alert.msg && <Alert color={alert.color}>{alert.msg}</Alert>}
